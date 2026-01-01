@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansary Mahmoud | ICT Expert & Developer</title>
+    <meta name="description" content="Portfolio of Ansary Mahmoud - Senior ICT Educator and Full-stack Developer specializing in ERP-X, EDU-X, and Robotics.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #B9935E, #8C6A3E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900" x-data="{ mobileMenu: false }">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-2xl font-bold tracking-tighter gradient-text">ANSARY.M</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="#hero" class="hover:text-amber-600 transition">Home</a>
+                    <a href="#about" class="hover:text-amber-600 transition">Expertise</a>
+                    <a href="#projects" class="hover:text-amber-600 transition">Projects</a>
+                    <a href="#skills" class="hover:text-amber-600 transition">Skills</a>
+                    <a href="#contact" class="px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition">Contact Me</a>
+                </div>
+                <div class="md:hidden">
+                    <button @click="mobileMenu = !mobileMenu" class="p-2"><i data-lucide="menu"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <span class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold tracking-widest uppercase mb-4">14+ Years of Professional Excellence</span>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 text-slate-900">
+                    Mastering the <span class="gradient-text">Art of Tech</span> & Education
+                </h1>
+                <p class="text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
+                    Senior ICT Educator and Software Architect. From pioneering digital transformation at the <strong>Egyptian Ministry of Education</strong> to engineering complex enterprise solutions like <strong>ERP-X</strong>. I blend pedagogical expertise with high-level software development to empower the next generation of innovators.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-semibold hover:shadow-2xl transition-all">Explore Projects</a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-slate-900 rounded-xl font-semibold hover:bg-slate-900 hover:text-white transition-all">Get Contact Details</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center relative">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 bg-amber-100">
+                    <img src="cv.png" alt="Ansary Mahmoud" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-bold">Comprehensive <span class="text-amber-600 underline decoration-slate-200">Professional Journey</span></h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Since 2011, I have been a cornerstone of technology development at the Ministry of Education. My role transcends traditional teaching; I am a <strong>system architect</strong> who designs digital tools that streamline learning for thousands of students.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        As a <strong>Self-Taught Expert</strong>, I have mastered Full-stack Development and Robotics through rigorous independent research. My philosophy is simple: technology should not just be taught; it should be used to solve real-world problems through systems like <strong>EDU-X</strong> and <strong>ERP-X</strong>.
+                    </p>
+                    <div class="flex gap-8 py-4">
+                        <div>
+                            <p class="text-3xl font-bold text-slate-900 underline decoration-amber-500">2011</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Founding Year</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-slate-900 underline decoration-amber-500">B.Sc.</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Educational Tech</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <h4 class="font-bold text-slate-900 mb-2">Pedagogical Innovation</h4>
+                        <p class="text-sm text-slate-500">Developing national ICT curricula and mentoring global competitors for <strong>NASA Space Apps</strong> and <strong>ISEF</strong>.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <h4 class="font-bold text-slate-900 mb-2">Systems Engineering</h4>
+                        <p class="text-sm text-slate-500">Architecting scalable business and educational platforms using <strong>Node.js, Python,</strong> and <strong>Advanced IoT</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-slate-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Core Systems & Innovations</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto leading-relaxed">A portfolio of production-ready systems designed to optimize business operations and modernize educational environments.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all">
+                        <i data-lucide="layout-grid"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ERP-X Suite</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        A massive integrated system for retail, restaurants, and medical laboratories. Features advanced inventory tracking, automated reporting, and secure data handling using <strong>MySQL</strong>.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-full uppercase tracking-widest text-slate-500">Full-Stack</span>
+                        <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-full uppercase tracking-widest text-slate-500">Business Intel</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">EDU-X Platform</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        A custom-built Learning Management System designed to bridge the digital gap in classrooms. Facilitates interactive lessons and streamlined student tracking.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-full uppercase tracking-widest text-slate-500">LMS Architecture</span>
+                        <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-full uppercase tracking-widest text-slate-500">EdTech</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-red-50 text-red-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-600 group-hover:text-white transition-all">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">robotics & Advanced IoT</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Specialized robotics training programs utilizing <strong>Arduino, ESP32,</strong> and <strong>ESP8266</strong>. Preparing student teams for global engineering challenges like <strong>NASA Space Apps</strong>.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-full uppercase tracking-widest text-slate-500">Embedded Systems</span>
+                        <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold rounded-full uppercase tracking-widest text-slate-500">Robotics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-900 text-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 italic tracking-tight">The Technical <span class="text-amber-500">Arsenal</span></h2>
+                    <div class="space-y-6">
+                        <div class="p-6 border-l-4 border-amber-500 bg-slate-800/50 rounded-r-2xl">
+                            <h4 class="font-bold text-amber-500 mb-2 uppercase tracking-widest text-xs">Software & Web Tech</h4>
+                            <p class="text-slate-300 font-medium">Node.js, JavaScript, Python, Tailwind CSS, HTML5, CSS3.</p>
+                        </div>
+                        <div class="p-6 border-l-4 border-slate-500 bg-slate-800/50 rounded-r-2xl">
+                            <h4 class="font-bold text-slate-400 mb-2 uppercase tracking-widest text-xs">Hardware & Systems</h4>
+                            <p class="text-slate-300 font-medium">Arduino C, ESP32, ESP8266, Sensor Integration, Circuit Design.</p>
+                        </div>
+                        <div class="p-6 border-l-4 border-slate-500 bg-slate-800/50 rounded-r-2xl">
+                            <h4 class="font-bold text-slate-400 mb-2 uppercase tracking-widest text-xs">Teaching & EdTech Tools</h4>
+                            <p class="text-slate-300 font-medium">STEM Pedagogy, Scratch, PictoBlox, Microsoft Office 365, NASA Space Apps Mentor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 p-10 rounded-[40px] border border-slate-700 relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl"></div>
+                    <h3 class="text-2xl font-bold mb-6 italic underline decoration-amber-500 underline-offset-8">Educational Foundation</h3>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        My expertise is built on a solid academic foundation with a <strong>Bachelor of Educational Technology</strong> from <strong>Al-Azhar University</strong> (Grade: Very Good, Class of 2011). This unique background allows me to bridge the gap between technical complexity and educational clarity.
+                    </p>
+                    <div class="flex items-center gap-4 py-6 border-t border-slate-700">
+                        <div class="w-14 h-14 bg-amber-500/20 text-amber-500 rounded-2xl flex items-center justify-center font-bold text-xl">AZ</div>
+                        <div>
+                            <div class="font-bold text-lg">Al-Azhar University</div>
+                            <div class="text-xs text-slate-500 tracking-widest uppercase mt-1">Class of 2011 | Educational Technology</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 italic">Get in Touch</h2>
+                <p class="text-slate-500 max-w-xl mx-auto">Available for educational consulting, system development, and STEM mentoring. Connect through any channel below.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 flex items-center gap-4 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white text-amber-600 rounded-2xl flex items-center justify-center shadow-sm">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Primary Phone</p>
+                            <p class="text-slate-900 font-bold">+20 1010 676 035</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 flex items-center gap-4 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white text-slate-600 rounded-2xl flex items-center justify-center shadow-sm">
+                            <i data-lucide="phone-call"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Secondary Phone</p>
+                            <p class="text-slate-900 font-bold">+20 1145 471 047</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 flex items-center gap-4 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white text-amber-600 rounded-2xl flex items-center justify-center shadow-sm">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Official Email</p>
+                            <a href="mailto:ansary184@gmail.com" class="text-slate-900 font-bold hover:text-amber-600">ansary184@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 flex items-center gap-4 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white text-slate-600 rounded-2xl flex items-center justify-center shadow-sm">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Location</p>
+                            <p class="text-slate-900 font-bold">Qena, Egypt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <div class="bg-slate-900 p-10 rounded-[40px] shadow-2xl">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <input type="text" name="name" placeholder="Full Name" required class="w-full px-6 py-4 rounded-2xl border-none bg-slate-800 text-white focus:ring-2 focus:ring-amber-500">
+                                <input type="email" name="email" placeholder="Email Address" required class="w-full px-6 py-4 rounded-2xl border-none bg-slate-800 text-white focus:ring-2 focus:ring-amber-500">
+                            </div>
+                            <textarea name="message" rows="4" placeholder="How can I help you with your next project or school initiative?" required class="w-full px-6 py-4 rounded-2xl border-none bg-slate-800 text-white focus:ring-2 focus:ring-amber-500"></textarea>
+                            <button type="submit" class="w-full py-5 bg-amber-600 text-white rounded-2xl font-bold text-lg hover:bg-amber-500 transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="send"></i> Send Professional Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-100 text-center bg-slate-50">
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="https://linkedin.com" class="p-3 bg-white rounded-xl shadow-sm hover:text-amber-600 transition duration-300">
+                <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com" class="p-3 bg-white rounded-xl shadow-sm hover:text-amber-600 transition duration-300">
+                <i data-lucide="github"></i>
+            </a>
+            <a href="mailto:ansary184@gmail.com" class="p-3 bg-white rounded-xl shadow-sm hover:text-amber-600 transition duration-300">
+                <i data-lucide="mail"></i>
+            </a>
+        </div>
+        <p class="text-slate-400 text-xs tracking-widest font-bold">&copy; 2026 ANSARY ABD EL-SAMIE MAHMOUD. BUILT FOR EXCELLENCE.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
