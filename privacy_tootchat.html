@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية - تطبيق توت شات (TootChat)</title>
+  <style>
+    :root {
+      --primary: #10634e;
+      --primary-light: #e6f3ee;
+      --primary-dark: #094032;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Arabic", sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #ffffff;
+      padding: 36px 24px;
+      text-align: center;
+    }
+
+    .header-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .content {
+      padding: 32px 24px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 6px;
+    }
+
+    p, ul {
+      color: var(--text-muted);
+      font-size: 14.5px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-right: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background-color: var(--primary-light);
+      border-right: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--primary-dark);
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px 14px;
+      text-align: right;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .contact-box {
+      background: #f8fafc;
+      border: 1px dashed var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      border-top: 1px solid var(--border-color);
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+      background: #f8fafc;
+    }
+
+    .lang-switcher {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .lang-btn {
+      display: inline-block;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 4px;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="header-badge">سياسة الخصوصية الرسمية</div>
+      <h1>تطبيق توت شات (TootChat)</h1>
+      <p>معرّف الحزمة: site.tootstem.chat • منصة توت التعليمية (Toot STEM)</p>
+      <p style="margin-top: 6px; font-size: 12px; opacity: 0.85;">تاريخ السريان وآخر تحديث: 24 أكتوبر 2026</p>
+    </div>
+
+    <div class="content">
+      <!-- Section 1 -->
+      <div class="section">
+        <h2 class="section-title">1. مقدمة عامة</h2>
+        <p>
+          نلتزم في منصة <strong>توت التعليمية (Toot STEM)</strong> بحماية خصوصية مستخدمي تطبيق <strong>توت شات (TootChat)</strong>، بما في ذلك الطلاب والمعلمون وأولياء الأمور والإداريون.
+          توضح سياسة الخصوصية هذه كيفية جمع واستخدام وتأمين وإدارة البيانات عند استخدام تطبيق توت شات وموقعه الإلكتروني التابع: <a href="https://chat.tootstem.site" target="_blank" style="color: var(--primary); font-weight: 600;">https://chat.tootstem.site</a>.
+        </p>
+        <div class="highlight-box">
+          تطبيق <strong>TootChat</strong> هو تطبيق اتصال تعليمي مخصص حصرياً للمؤسسات والمدارس والمجموعات التعليمية للتواصل الأكاديمي المباشر والمشفر بين المعلمين والطلاب تحت إشراف إداري مسؤول. <strong>لا يحتوي التطبيق على أي إعلانات تجارية ولا نبيع أو نؤجر بيانات المستخدمين نهائياً</strong>.
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <h2 class="section-title">2. البيانات والمعلومات التي نقوم بجمعها</h2>
+        <p>نقوم بجمع الحد الأدنى من البيانات الضرورية للغاية لتقديم الخدمة التعليمية:</p>
+        <ul>
+          <li><strong>بيانات الحساب الأساسية:</strong> الاسم الكامل، رقم الهاتف (المستخدم كمعرّف لتسجيل الدخول)، الدور الأكاديمي (طالب / معلم / مدير)، والفرع المؤسسي التابع له.</li>
+          <li><strong>محتوى المراسلات والواجبات:</strong> الرسائل النصية المتبادلة في الفصول والمحادثات الخاصة، المستندات والملفات المرفقة (مثل ملفات الواجبات PDF أو الصور)، والمقاطع الصوتية المسجلة.</li>
+          <li><strong>التسجيلات الصوتية:</strong> يتم جمع ومعالجة التسجيلات الصوتية فقط عندما يختار المستخدم بنفسه الضغط على زر التسجيل الصوتي لإرسال رسالة صوتية للمعلم أو الفصل.</li>
+          <li><strong>بيانات الجهاز والإشعارات:</strong> معرّف رمز الجهاز (Firebase Device Token) لإرسال الإشعارات الفورية للمستخدمين عند استلام رسائل أو واجبات جديدة.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <h2 class="section-title">3. الأذونات الحساسة والغرض الحصري منها</h2>
+        <p>يطلب التطبيق عدداً محدوداً من أذونات أندرويد لتمكين ميزات الاتصال التعليمي:</p>
+        
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>الإذن (Permission)</th>
+                <th>الغرض الحصري من الاستخدام</th>
+                <th>هل يعمل في الخلفية؟</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>تسجيل الصوت (RECORD_AUDIO)</strong></td>
+                <td>يُستخدم حصرياً عندما ينقر المستخدم على زر الميكروفون لتسجيل وإرسال رسالة صوتية للمعلم أو الفصل في المحادثة.</td>
+                <td><strong>كلا</strong>، لا يتم التسجيل نهائياً إلا بتفاعل المستخدم المباشر في واجهة المحادثة.</td>
+              </tr>
+              <tr>
+                <td><strong>الإشعارات (POST_NOTIFICATIONS)</strong></td>
+                <td>إشعار الطالب أو المعلم عند وصول رسالة جديدة أو إعلان مدرسي في قنوات الفصل المعتمدة.</td>
+                <td>نعم، لاستلام تنبيهات الرسائل الواردة فورياً.</td>
+              </tr>
+              <tr>
+                <td><strong>الوصول إلى الوسائط والمستندات</strong></td>
+                <td>اختيار صورة الملف الشخصي أو رفع وتنزيل الملفات التعليمية والواجبات الدراسية.</td>
+                <td>كلا، بناءً على اختيار المستخدم فقط.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <h2 class="section-title">4. حماية خصوصية الأطفال والطلاب (Children's Privacy)</h2>
+        <p>
+          نلتزم بأعلى معايير وقوانين حماية خصوصية الأطفال الدولية، بما في ذلك متطلبات <strong>Google Play Families Policy</strong> وقانون <strong>COPPA</strong> واللائحة العامة لحماية البيانات للأطفال (GDPR-K):
+        </p>
+        <ul>
+          <li><strong>لا يوجد تسجيل مفتوح أو عام للجمهور:</strong> يتم إنشاء وتسكين حسابات الطلاب فقط من قِبل إدارة المدرسة أو المؤسسة التعليمية المسؤولة والمعلمين المعتمدين.</li>
+          <li><strong>محادثات مغلقة ومحمية:</strong> لا يستطيع الطلاب البحث عن مستخدمين خارجيين أو مراسلة أشخاص خارج فصولهم وكادرهم التعليمي.</li>
+          <li><strong>انعدام الإعلانات والتعقب التجاري:</strong> التطبيق خالٍ بنسبة 100% من أي إعلانات لطرف ثالث، ولا يقوم بجمع أي بيانات لتوجيه الإعلانات أو التنميط التجاري.</li>
+          <li><strong>الرقابة التربوية:</strong> تخضع القنوات لإشراف تربوي من قِبل إدارة الفرع والمؤسسة التعليمية لضمان سلامة وأمن بيئة التعلم الرقمية.</li>
+        </ul>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <h2 class="section-title">5. أمن وتشفير البيانات (Data Security)</h2>
+        <ul>
+          <li><strong>تشفير متطور (AES-256-GCM):</strong> يتم تشفير محتوى الرسائل قبل حفظها في قاعدة البيانات بمفاتيح تشفير متقدمة تضمن سرية المحتوى.</li>
+          <li><strong>بروتوكول آمن (HTTPS / SSL):</strong> يتم نقل كافة البيانات والمحادثات والملفات حصرياً عبر قنوات اتصال مشفرة ومؤمنة بواسطة شهادات أمان موثوقة.</li>
+          <li><strong>عزل الفروع والمؤسسات:</strong> بنية تحتية تضمن استقلالية فروع المؤسسة وعزل بيانات كل فرع وفصل لمنع الوصول غير المصرح به.</li>
+        </ul>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="section">
+        <h2 class="section-title">6. مشاركة البيانات مع أطراف ثالثة</h2>
+        <p>
+          <strong>نحن لا نبيع أو نتاجر أو نؤجر أي بيانات شخصية أو تعليمية على الإطلاق لأي طرف ثالث.</strong>
+          نستخدم فقط خدمات تقنية موثوقة ومطابقة لمعايير الأمان العالمية لتشغيل التطبيق:
+        </p>
+        <ul>
+          <li><strong>Google Firebase Cloud Messaging (FCM):</strong> لتوصيل إشعارات الرسائل إلى أجهزة أندرويد فقط.</li>
+        </ul>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="section">
+        <h2 class="section-title">7. حذف الحساب والبيانات (Account & Data Deletion)</h2>
+        <p>
+          يمتلك المستخدمون (أو أولياء أمور الطلاب) الحق الكامل في طلب حذف حساباتهم أو أي بيانات مرتبطة بهم في أي وقت:
+        </p>
+        <ul>
+          <li><strong>عبر إدارة المدرسة:</strong> يمكن لمدير الفرع أو المشرف العام حذف حساب المستخدم فورياً مع كافة بياناته وسجلاته بضغطة زر واحدة من مركز الإدارة.</li>
+          <li><strong>عبر مراسلتنا مباشرة:</strong> يمكن لأي مستخدم أو ولي أمر تقديم طلب حذف الحساب بإرسال بريد إلكتروني إلى: <a href="mailto:support@tootstem.site" style="color: var(--primary); font-weight: 600;">support@tootstem.site</a> مع ذكر رقم الهاتف المسجل، وسيتم حذف كافة البيانات المرتبطة خلال 48 ساعة كحد أقصى.</li>
+        </ul>
+      </div>
+
+      <!-- Section 8 -->
+      <div class="section">
+        <h2 class="section-title">8. التواصل ومعلومات المسؤول عن الخصوصية</h2>
+        <p>
+          إذا كان لديك أي استفسار أو طلب أو اقتراح بخصوص سياسة الخصوصية أو معالجة البيانات، يُرجى التواصل معنا:
+        </p>
+        <div class="contact-box">
+          <p><strong>منصة توت التعليمية (Toot STEM Platform)</strong></p>
+          <p>تطبيق توت شات: <strong>TootChat (site.tootstem.chat)</strong></p>
+          <p>البريد الإلكتروني المعتمد: <a href="mailto:support@tootstem.site">support@tootstem.site</a></p>
+          <p>الموقع الإلكتروني: <a href="https://chat.tootstem.site" target="_blank">https://chat.tootstem.site</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      جميع الحقوق محفوظة © 2026 منصة توت التعليمية (Toot STEM) • تطبيق توت شات (TootChat)
+    </div>
+  </div>
+
+</body>
+</html>
